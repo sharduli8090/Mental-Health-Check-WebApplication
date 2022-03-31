@@ -1,0 +1,18 @@
+add statistic feature
+
+facial expression mental health detection
+
+voice operatable
+
+if person is at high risk then show some doctor no. according to his or her location (ask location in asks)
+
+for ui
+toggle between questions or progress bar like oas
+
+later on iska .apk .exe or maybe later hardware or
+ B2B model can provide to already working businesses like doctor consultation apps yoga related apps medicine selling app infact koi bhi ongrowing apps honge usmein coz dis is a universal problem
+B2C model open website
+
+money- free version - paid version
+- we can either work on subscription model or pay per use model 
+

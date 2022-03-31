@@ -1,0 +1,23 @@
+#main{
+    margin:5% ;
+    padding-left: 1%;
+    padding-right: 2%;
+    float: right;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    background-color: #ffffff62;
+}
+
+
+
+#ques{
+    background-color: #ffffff62;
+    margin-top: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 17%;
+    padding: 5%;
+    font-size: 140%;
+    text-align: center;
+}
+
