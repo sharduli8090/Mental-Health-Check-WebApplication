@@ -28,46 +28,37 @@ function shown(){
 
 
 function never(num){
-	// return;
-	// alert(' never')
 	if(i<9){
 	i = i+1;
 	showQues(i,num);}
 	else{
-		// alert('results called')
 		results();
 	}
 }
 function some(num){
 	score += 1;
-	// alert(' some')
 	if(i<9){
 	i = i+1;
 	showQues(i,num);}
 	else{
-		// alert('results called')
 		results();
 	}
 }
 function half(num){
 	score+= 3;
-	// alert(' half')
 	if(i<9){
 	i = i+1;
 	showQues(i,num);}
 	else{
-		// alert('results called')
 		results();
 	}
 }
 function always(num){
 	score += 5;
-	// alert(' always')
 	if(i<9){
 	i = i+1;
 	showQues(i,num);}
 	else{
-		// alert('results called')
 		results();
 	}
 }
@@ -129,86 +120,62 @@ function showQues(j,n){
 
 function selfs(val){
 	selfVar=val.value;
-	// alert(selfVar)
 
 }
 
 
 function ages(age){
-	ageVar=age.value
-	// alert(ageVar)
+	ageVar=age.value;
 
 }
 
 function gens(gen){
-	genVar=gen.value
-	// alert(genVar);
+	genVar=gen.value;
 
 
 }
 
 function loss(los){
 	lossVar = los.value;
-	// alert(lossVar)
 
 }
 
 
 
 function start(){
-// alert('start called')
-// alert('self '+selfVar+' gen '+genVar+' loss '+lossVar +' age '+ageVar)
 if(genVar==2){
 	score += 1;
-	// alert('genvar == 2 ' +score)
 }
 else if(genVar==3){
 	score += 2;
-	// alert('genvar == 3 '+score)
 }
 if(lossVar==1){
 	score +=3;
-	// alert('los var == 1 '+score)
 }
 if(ageVar==1){
-	// alert('age === 1')
 	if(selfVar==1){
-		// alert('self == 1')
 		document.getElementById('ques').innerHTML = "";
-		// alert('cleaned ' + score)
 		showQues(i,1);
 	}else if(selfVar==2){
-		// alert('self == 2')
 		document.getElementById('ques').innerHTML = "";
-		// alert('cleaned ' + score)
 		showQues(i,2);
 	}
 }
 else if(ageVar==2){
-	// alert('age === 2')
 	if(selfVar==1){
-		// alert('self == 1')
 		document.getElementById('ques').innerHTML = "";
-		// alert('cleaned ' + score)
 		showQues(i,3);
 	}else if(selfVar==2){
-		// alert('self == 2')
 		document.getElementById('ques').innerHTML = "";
-		// alert('cleaned ' + score)
 		showQues(i,4);
 	}
 }
 else if(ageVar==3){
-	// alert('age === 3')
 	if(selfVar==1){
-		// alert('self == 1')
 		document.getElementById('ques').innerHTML = "";
-		// alert('cleaned ' + score)
 		showQues(i,5);
 	}else if(selfVar==2){
-		// alert('self == 2')
 		document.getElementById('ques').innerHTML = "";
-		// alert('cleaned ' + score)
 		showQues(i,6);
 	}
 }
@@ -216,8 +183,8 @@ else if(ageVar==3){
 
 }
 
+
 function endMsg(advise){
-	// alert('endmsg func')
 	var temp = '<div class="alert alert-success" role="alert" style="text-align:left;">  <h4 class="alert-heading">Score After Evaluation : '+score+' </h4>  <p>'+advise+'</p>  <hr>  <p class="mb-0">Happy Mental Health </p></div><div class="alert alert-danger d-flex align-items-center" role="alert"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">		<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>	  </svg><div>This is just a small self-screening and to get the best treatment, Doctor Consultation is advisable!</div></div><br><a class="btn btn-outline-dark btn-lg" href="info.html" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Click here to start the screening test again!">Take The Test Again</a><span> </span><a class="btn btn-outline-dark btn-lg" href="First Page.html" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Click here to go to home page!">Go To Home Page</a>';
 	document.getElementById('ques').innerHTML += temp;
 	
@@ -232,25 +199,25 @@ function results(){
 		document.getElementById('ques').innerHTML += templates;
 		endMsg('Doctor consultation is highly recommended that too ASAP! Talk with your family! And remember you are not alone!');
 	}
-	else if(score>=27 && score<=39){
-		templates = '<div class="alert alert-danger" role="alert"><strong><You are at a High Risk !</strong></div>';
+	else if(score>=27 && score<40){
+		templates = '<div class="alert alert-danger" role="alert"><strong>You are at a High Risk !</strong></div>';
 		document.getElementById('ques').innerHTML += templates;
 		endMsg('Doctor Consultation is advisable! Talk with your family! And remember you are not alone!');
 		
 	}
-	else if(score>=16 && score<26){
+	else if(score>=16 && score<27){
 		templates = '<div class="alert alert-primary" role="alert"><strong>You are at a Medium Risk !</strong></div>';
 		document.getElementById('ques').innerHTML += templates;
 		endMsg('Talk with your Family! You can consult your Doctor if any of the above symptoms continues or become frequent!');
 		
 	}
-	else if(score>=6 && score<=15){
+	else if(score>=6 && score<16){
 		templates = '<div class="alert alert-primary" role="alert"><strong>You are at Less Risk !</strong></div>';
 		document.getElementById('ques').innerHTML += templates;
 		endMsg('Your Mental is doing well! Just believe in yourself and never forget that you are not alone! Talk to your loved ones if needed!');
 		
 	}
-	else if(score>=0 && score<=5){
+	else if(score>=0 && score<6){
 		templates = '<div class="alert alert-success" role="alert"><strong>	You are at a very Low Risk !</strong> </div>';
 		document.getElementById('ques').innerHTML += templates;
 		endMsg("Your Mental Health is completely fine!! KEEP GOING HAPPILY!! ");

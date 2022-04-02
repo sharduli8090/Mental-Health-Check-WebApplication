@@ -9,7 +9,6 @@
 }
 
 
-
 #ques{
     background-color: #ffffff62;
     margin-top: 12%;
@@ -20,4 +19,26 @@
     font-size: 140%;
     text-align: center;
 }
-
+#info{
+    background-color: rgb(0, 79, 85);
+    width: 50px;
+    height: 49px;
+    padding: 0.3%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 2px 4px 10px #000000;
+    transition: width 2s;
+}
+#imi{
+    height:40px;
+    width:40px;
+   transition: width 5s height 5s; 
+}
+#imi:hover{
+    width: 100px;
+    height:100px;
+}
+#info:hover {
+    cursor:grab;
+    width: 150px;
+}
