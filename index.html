@@ -1,71 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
+    
+    <head>
+        
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    
     <link href="index.css" rel="stylesheet">
-    
-    <link rel="icon" href="co.png" type="image/x-icon">
-    <title>Mental Health Check Program</title>
-    
-  </head>
-  <body background="10.png" >
+    <link rel="icon" href="https://i.pinimg.com/564x/9f/94/8e/9f948e11694a92e67a707a144366b533.jpg" type="image/x-icon">
 
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-light p-4">
-        <h5 class="text-black h4 text-center">Powered By Creativstan</h5>
-      </div>
-    </div>
-    <nav class="navbar fixed-top navbar-light" style="background-color: #ffffffad;">
-      <div class="container-fluid"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button><div></div><div></div>
-        <h1 class="navbar-brand mb-0 " style="text-align: center;">" MENTAL HEALTH CHECK "</h1><div></div>
-      </div>
-      
-    </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <!-- Link for the icons of font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <div id="info" style="margin-top: 7%;">
-      <img id="imi" style="border-radius: 40px;float: right;" src="co.png"></div>
+        <title>
+            Mental Health Check Program
+        </title>
+    </head>
+    <body id="boody">
+        <nav id="navBar">
+            <div id="headText">MENTAL HEALTH CHECK</div>
+        </nav>
 
-
-<div id="all">
-    <div id="main"  style="margin-top:none;">
-        
-        <figure class="text-end">
-            <blockquote class="blockquote">
-              <p class="display-5"><strong>'YOU ARE NOT ALONE'</strong><br>We recommend you to read the disclamair before proceding.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer" >
-              Creativstan<cite title="Source Title"> By Sharduli Pandey</cite>
-            </figcaption>
-
-            <a  class="btn btn-outline-info btn-lg" type="submit" role="button" aria-disabled="true" onclick="shown()">Click Here To Read Next</a>
-
-            <a class="btn btn-outline-warning btn-lg" href="info.html" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Click here to start the screening test!">Start The Test</a>
+        <div id="boxFlex">
+            <div id="box">
+                <div id="introText">'You Are Not Alone'</div>
+                <div id="descText">We recommend you to read the disclamair before proceding.</div>
+                <div id="buttons">
+                    <button id="ReadNext" class="mainBtn" onclick="shown()" title="Click Here To Read The Disclamair">Click Here To Read Next</button>
+                    <button id="startText" class="mainBtn" onclick="startTheTest()" title="Click Here To Start The Test">Start The Test</button>
+                </div>
+            </div>
+            <div id="box2"></div>
+        </div>
+        <div id="footerFlex">
+            <div id="footerText">Powered By Creativstan</div>
+            <div id="icons">
+                <a href="https://www.instagram.com/creativstan/" target="_blank">
             
-            </figure>
-    </div>    
-</div>
+                    <!-- Icon -->
+                    <i class="fa fa-instagram icon" ></i>
+        
+                </a>
+        
+                <!-- Pinterest -->
+                <a href="https://in.pinterest.com/creativstan" target="_blank">
+            
+                    <!-- Icon -->
+                    <i class="fa fa-pinterest icon" ></i>
+        
+                </a>
+        
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/sharduli-pandey-85455b1a7/" target="_blank">
+            
+                    <!-- Icon -->
+                    <i class="fa fa-linkedin icon" ></i>
+        
+                </a>
+            </div>
+        </div>
 
-<div>
-  <nav class="navbar navbar-light fixed-bottom" style="background-color: #ffffff8a;">
-    <div class="container-fluid">
-      <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-      <a href="https://www.linkedin.com/in/shardulipandey" target="blank">
-        <img src="icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>Powered By Creativstan
-         <a href="https://www.instagram.com/creativstan/" target="blank">
-           <img src="icon2.jpeg" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
-      <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    </div>
-  </nav>
-</div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="index.js"></script>
-  
-  </body>
+        <script src="index.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </body>
 </html>
